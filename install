@@ -11,4 +11,4 @@ sudo apt-get install -y iojs
 wget -O - https://deb.nodesource.com/setup_6.x | sudo -E bash -
  sudo apt-get install -y nodejs 2>&1 | tee file.txt
  sudo apt-get install -y npm 2>&1 | tee file.txt
- sudo npm i  restcoder-cli 2>&1 | tee file.txt
+ sudo npm i  -g restcoder-cli 2>&1 | tee file.txt
