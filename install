@@ -2,7 +2,7 @@
 exec 2>&1
 dir=$(pwd)
 cd /tmp
-exec >>(tee -i /temp/dump.log) 
+exec > >(tee -i /temp/dump.log) 
 cd $dir
  sudo apt-get update
  sudo apt-get install -y nodejs
