@@ -1,6 +1,9 @@
 
 exec 2>&1
-exec > >(tee -i /temp/dump.log) 
+dir=$(pwd)
+cd /tmp
+exec >>(tee -i /temp/dump.log) 
+cd $dir
  sudo apt-get update
  sudo apt-get install -y nodejs
  sudo apt-get install -y npm
