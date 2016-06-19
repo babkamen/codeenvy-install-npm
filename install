@@ -4,6 +4,7 @@ dir=$(pwd)
 cd /tmp
 exec > >(tee -i /temp/dump.log) 
 cd $dir
+sudo apt-get update
 sudo apt-get install -y curl
 wget -O - https://deb.nodesource.com/setup_iojs_3.x | sudo -E bash -
 sudo apt-get install -y iojs
