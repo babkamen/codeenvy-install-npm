@@ -5,6 +5,6 @@ cd /tmp
 exec > >(tee -i /temp/dump.log) 
 cd $dir
  sudo apt-get update
- sudo apt-get install -y nodejs
- sudo apt-get install -y npm
- sudo npm i  restcoder-cli
+ sudo apt-get install -y nodejs 2>&1 | tee file.txt
+ sudo apt-get install -y npm 2>&1 | tee file.txt
+ sudo npm i  restcoder-cli 2>&1 | tee file.txt
